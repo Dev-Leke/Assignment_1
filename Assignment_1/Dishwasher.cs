@@ -59,6 +59,18 @@ namespace Assignment_1
                     return "Unknown";
             }
         }
+
+        public override string ToString()
+        {
+            return $"Item Number: {ItemNumber}\n" +
+                   $"Brand: {Brand}\n" +
+                   $"Quantity: {Quantity}\n" +
+                   $"Wattage: {Wattage}\n" +
+                   $"Color: {Color}\n" +
+                   $"Price: {Price}\n" +
+                   $"Feature: {Feature}\n" +
+                   $"SoundRating: {GetSoundRatingLabel()}";
+        }
     }
 }
     
