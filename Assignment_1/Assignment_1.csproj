@@ -44,8 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appliance.cs" />
+    <Compile Include="Dishwasher.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="Microwaves.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Refrigerator.cs" />
+    <Compile Include="Vacuum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

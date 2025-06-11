@@ -15,9 +15,7 @@ namespace Assignment_1
         private string color;
         private double price;
 
-        protected Appliance()
-        {
-        }
+        
 
         public long ItemNumber { get => itemNumber; set => itemNumber = value; }
         public string Brand { get => brand; set => brand = value; }
@@ -25,6 +23,10 @@ namespace Assignment_1
         public double Wattage { get => wattage; set => wattage = value; }
         public string Color { get => color; set => color = value; }
         public double Price { get => price; set => price = value; }
+
+        protected Appliance()
+        {
+        }
 
         protected Appliance(long itemNumber, string brand, int quantity, double wattage, string color, double price)
         {
