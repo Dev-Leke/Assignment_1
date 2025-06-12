@@ -12,7 +12,20 @@ namespace Assignment_1
         private string soundRating;
 
         public string Feature { get => feature; set => feature = value; }
-        public string SoundRating { get => soundRating; set => soundRating = value; }
+        public string SoundRating 
+        {
+            get => soundRating; 
+            
+            set
+            {
+                if (!IsValidSoundRating(value))
+                {
+                    throw new ArgumentException("Invalid Sound Rating. Allowed values are: Qt, Qr, Qu, M");
+                }
+                soundRating = value;
+            }
+        
+        }
 
         public Dishwasher()
         {
@@ -58,6 +71,11 @@ namespace Assignment_1
                 default:
                     return "Unknown";
             }
+        }
+
+        private bool IsValidSoundRating(string rating)
+        {
+            return rating == "Qt" || rating == "Qr" || rating == "Qu" || rating == "M";
         }
 
         public override string ToString()
