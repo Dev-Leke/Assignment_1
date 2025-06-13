@@ -19,7 +19,7 @@ namespace Assignment_1
 
             while (running)
             {
-                Console.Clear();
+                //Console.Clear();
                 Console.WriteLine("Welcome to Modern Appliances!");
                 Console.WriteLine("How may we assist you?");
                 Console.WriteLine("1 – Check out appliance");
@@ -319,7 +319,7 @@ namespace Assignment_1
 
         public static void DisplayRandomAppliances()
         {
-            Console.Write("Enter number of appliances to display: ");
+            Console.WriteLine("Enter number of appliances to display: ");
             if (int.TryParse(Console.ReadLine(), out int count))
             {
                 if (count <= 0)
