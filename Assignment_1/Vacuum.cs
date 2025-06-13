@@ -49,9 +49,9 @@ namespace Assignment_1
         {
             switch(batteryVoltage)
             {
-                case 1:
+                case 18:
                     return "Low";
-                case 2:
+                case 24:
                     return "High";
                 default:
                     return $"{batteryVoltage}V";
